@@ -1,0 +1,263 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  font-family: "Josefin Sans", sans-serif;
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Romanica, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 20px;
+  background-color: black;
+}
+
+/*
+REUSABLES
+*/
+
+a:link,
+a:visited {
+  @apply rounded-xl border-2 divide-solid border-[#b60606] no-underline px-5 py-3 box-border text-center block text-white;
+}
+a:hover,
+a:active {
+  background-color: #b60606;
+  border: 2px solid #b60606;
+  transition: 0.3s;
+}
+a:hover i,
+a:active i {
+  color: white;
+  transition: 0.3s;
+}
+
+i {
+  color: #b60606;
+}
+
+/*
+NAVIGATION BAR
+*/
+
+.navbar {
+  @apply bg-black w-[100vw] h-[60px] flex items-center justify-start z-[2000] fixed top-0;
+}
+.navbar .logo {
+  @apply h-[55px] w-[55px] mr-2 flex items-center justify-center;
+}
+/* .navbar .logo img {
+  max-height: 100%;
+  max-width: 100%;
+} */
+
+/*
+HEADER
+*/
+
+.header {
+  @apply mt-14 relative h-[100vh] w-[100vw] overflow-hidden;
+}
+
+header .background-items {
+  @apply grid grid-cols-[47.5%] gap-[5%] p-[5%] h-[100%] w-[100%] box-border absolute top-0 left-0 z-10;
+}
+
+header .background-items .left-column {
+  @apply h-[100%] w-[100%];
+}
+/* header .background-items .left-column img {
+  max-height: 100%;
+  max-width: 100%;
+} */
+header .background-items .right-column {
+  @apply bg-[#b60606];
+}
+header .background-items .headerbg {
+  @apply absolute top-0 left-[50%] -translate-x-[-50%] h-[80%] z-10;
+}
+
+header .text-container {
+  @apply h-[100%] w-[100%] absolute z-20 flex flex-col items-center justify-end pb-[5%] box-border;
+}
+
+header .text-container .header-contact-buttons {
+  @apply w-[90%] flex flex-wrap items-center justify-center pb-5 box-border;
+}
+header .text-container .header-contact-buttons a {
+  @apply mt-5 mr-2;
+}
+header .text-container .header-contact-buttons a:last-child {
+  @apply mr-0;
+}
+
+header .text-container .bottom-container {
+  @apply bg-[#2e0000e6] flex flex-col items-center justify-end w-[90%];
+}
+
+header .text-container .categories {
+  @apply flex flex-col list-none items-center mt-5;
+}
+header .text-container .categories li {
+  @apply tracking-tighter font-bold;
+}
+
+header .text-container .motto {
+  @apply p-[5%] box-border text-[200%] font-light italic text-center flex items-center justify-center;
+}
+
+/*
+Section Header Description
+*/
+
+section.header-description {
+  @apply border-2 border-dashed border-[#b60606] px-[20%] py-[5%] box-border text-center;
+}
+
+/*
+Section Updates List
+*/
+section.update-template-1 {
+  @apply mt-[5%] w-[100vw] relative h-auto;
+}
+
+/* section.update-template-1 img {
+  max-height: 100%;
+  max-width: 100%;
+} */
+
+section.update-template-1 .decoration-container {
+  @apply w-[100%] h-[500px] relative;
+}
+
+section.update-template-1 .decoration-container .decorationbox1,
+section.update-template-1 .decoration-container .decorationbox3 {
+  @apply absolute z-10 flex items-center justify-center h-[300px] w-[300px];
+}
+section.update-template-1 .decoration-container .decorationbox1 {
+  @apply top-0 left-3;
+}
+section.update-template-1 .decoration-container .decorationbox3 {
+  @apply bottom-0 right-3;
+}
+
+section.update-template-1 .decoration-container .decorationbox2 {
+  @apply bg-[#b60606] h-[300px] w-[100%] absolute top-24;
+}
+
+section.update-template-1 .text-container {
+  @apply bg-[#2e0000e6] border-t-2 border-dashed border-[#fd831f] border-b-2 border-dashed border-[#fd831f] px-[5%] 
+  pt-[10%] pb-[20%] box-border flex flex-col items-center justify-center text-center mt-5;
+}
+
+section.update-template-1 .text-container .title {
+  @apply font-bold text-[200%];
+}
+section.update-template-1 .text-container .subtitle {
+  @apply font-bold text-[150%] my-5 mx-0;
+}
+section.update-template-1 .text-container .store-button {
+  @apply mt-[20px];
+}
+
+section.update-template-2 {
+  @apply bg-birds;
+}
+
+section.update-template-2 .decorationbox1 {
+  @apply bg-primary h-[250px] w-[90%] mx-0 my-auto;
+}
+section.update-template-2 .decorationbox2 {
+  @apply h-[300px] w-[100%] -mt-[50%] mr-auto mb-0 ml-auto  flex items-center justify-center;
+}
+/* section.update-template-2 .decorationbox2 img {
+  max-height: 100%;
+  max-width: 100%;
+} */
+section.update-template-2 .text-container {
+  @apply bg-[#2e0000e6] pt-[5%] px-[5%] pb-[25%] box-border text-center;
+}
+section.update-template-2 .text-container .title {
+  @apply font-bold text-[200%] mb-5;
+}
+
+/*
+Footer
+*/
+
+/* footer {
+  padding: 15% 5% 5% 5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+footer .contactcontent {
+  @apply w-full md:w-[30%] my-2;
+}
+
+footer .contactcontent:hover .name,
+footer .contactcontent:active .name {
+  @apply text-white transition delay-75;
+}
+
+footer .contactcontent .name {
+  @apply text-primary;
+}
+footer .contactcontent:last-child {
+  @apply mb-0;
+}
+
+footer .footer-description {
+  @apply text-center rounded-lg border-2 border-dashed border-primary p-2 w-full;
+}
+
+/*
+Exceptions
+*/
+
+.redbottomborder {
+  @apply border-b-2 border-primary border-dashed;
+}
+
+.orangebottomborder {
+  @apply border-b-4 border-[#fd831f] border-dashed;
+}
+.orangebox {
+  @apply !bg-orange;
+}
+.orangebirds {
+  @apply !bg-birdsOrange;
+}
+
+.magentabottomborder {
+  @apply border-b-4 border-[#c90046] border-dashed;
+}
+.magentabox {
+  @apply !bg-[#c90046];
+}
+.magentabirds {
+  @apply !bg-birdsMagenta;
+}
+
+.bluebottomborder {
+  @apply border-b-4 border-[#2192ff] border-dashed;
+}
+.bluebox {
+  @apply !bg-[#2192ff];
+}
+.bluebirds {
+  @apply !bg-birdsBlue;
+}
