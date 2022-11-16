@@ -37,12 +37,11 @@ a:active {
 }
 a:hover i,
 a:active i {
-  color: white;
-  transition: 0.3s;
+  @apply text-white transition delay-75;
 }
 
 i {
-  color: #b60606;
+  @apply text-[#b60606];
 }
 
 /*
@@ -64,12 +63,12 @@ NAVIGATION BAR
 HEADER
 */
 
-.header {
+header {
   @apply mt-14 relative h-[100vh] w-[100vw] overflow-hidden;
 }
 
 header .background-items {
-  @apply grid grid-cols-[47.5%] gap-[5%] p-[5%] h-[100%] w-[100%] box-border absolute top-0 left-0 z-10;
+  @apply grid grid-cols-[47.5%]   gap-[5%] p-[5%] h-[100%] w-[100%] box-border absolute top-0 left-0 z-10;
 }
 
 header .background-items .left-column {
@@ -80,7 +79,7 @@ header .background-items .left-column {
   max-width: 100%;
 } */
 header .background-items .right-column {
-  @apply bg-[#b60606];
+  @apply bg-[#b60606] sm:pt-[60%] box-border;
 }
 header .background-items .headerbg {
   @apply absolute top-0 left-[50%] -translate-x-[-50%] h-[80%] z-10;
@@ -108,11 +107,11 @@ header .text-container .categories {
   @apply flex flex-col list-none items-center mt-5;
 }
 header .text-container .categories li {
-  @apply tracking-tighter font-bold;
+  @apply tracking-tighter font-bold sm:tracking-wider md:text-[80%];
 }
 
 header .text-container .motto {
-  @apply p-[5%] box-border text-[200%] font-light italic text-center flex items-center justify-center;
+  @apply p-[5%] box-border  font-light italic text-center flex items-center justify-center sm:text-[175%] md:text-[150%] lg:text-[200%];
 }
 
 /*

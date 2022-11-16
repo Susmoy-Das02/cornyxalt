@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <header className="header">
+    <header>
       <div className="background-items">
         <div className="left-column">
           <Image alt=" " src="/cornyxcard.png" width="300px" height="300px" />
