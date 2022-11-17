@@ -7,8 +7,9 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        "3xl": "1920PX",
-        // print: { raw: "print" },
+        "3xl": "2000PX",
+        "4xl": "3000PX",
+        "5xl": "3500PX",
       },
       gridTemplateRows: {
         twoRows: "80px 1fr",

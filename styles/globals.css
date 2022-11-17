@@ -1,7 +1,11 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 * {
-  font-family: "Josefin Sans", sans-serif;
-} */
+  font-family: Romanica, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,14 +15,7 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-family: Romanica, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  font-size: 20px;
-  background-color: black;
+  @apply m-0 p-0 text-white text-xl bg-black  3xl:text-[300%]  4xl:text-[350%];
 }
 
 /*
@@ -31,9 +28,7 @@ a:visited {
 }
 a:hover,
 a:active {
-  background-color: #b60606;
-  border: 2px solid #b60606;
-  transition: 0.3s;
+  @apply bg-[#b60606] border-2 divide-solid border-[#b60606]  transition delay-75;
 }
 a:hover i,
 a:active i {
@@ -49,10 +44,10 @@ NAVIGATION BAR
 */
 
 .navbar {
-  @apply bg-black w-[100vw] h-[60px] flex items-center justify-start z-[2000] fixed top-0;
+  @apply bg-black w-[100vw] h-[60px] flex items-center justify-start z-[2000] fixed top-0 4xl:h-[200px];
 }
 .navbar .logo {
-  @apply h-[55px] w-[55px] mr-2 flex items-center justify-center;
+  @apply h-[55px] w-[55px] mr-2 flex items-center justify-center 4xl:h-[195px] w-[195px];
 }
 /* .navbar .logo img {
   max-height: 100%;
@@ -72,7 +67,7 @@ header .background-items {
 }
 
 header .background-items .left-column {
-  @apply h-[100%] w-[100%];
+  @apply h-[100%] w-[100%] sm:pt-[60%] box-border;
 }
 /* header .background-items .left-column img {
   max-height: 100%;
@@ -100,7 +95,7 @@ header .text-container .header-contact-buttons a:last-child {
 }
 
 header .text-container .bottom-container {
-  @apply bg-[#2e0000e6] flex flex-col items-center justify-end w-[90%];
+  @apply bg-[#2e0000e6] flex flex-col items-center justify-end w-[90%] 4xl:pt-[2.5] pb-[2.5];
 }
 
 header .text-container .categories {
@@ -119,7 +114,7 @@ Section Header Description
 */
 
 section.header-description {
-  @apply border-2 border-dashed border-[#b60606] px-[20%] py-[5%] box-border text-center;
+  @apply border-2 border-dashed border-[#b60606] px-[20%] py-[5%] box-border text-center md:p-[5%] lg:!px-[20%] !py-[5%];
 }
 
 /*
@@ -135,27 +130,28 @@ section.update-template-1 {
 } */
 
 section.update-template-1 .decoration-container {
-  @apply w-[100%] h-[500px] relative;
+  @apply w-[100%] h-[500px] relative 4xl:h-[1000px];
 }
 
 section.update-template-1 .decoration-container .decorationbox1,
 section.update-template-1 .decoration-container .decorationbox3 {
-  @apply absolute z-10 flex items-center justify-center h-[300px] w-[300px];
+  @apply absolute z-10 flex items-center justify-center h-[300px] w-[300px] 4xl:h-[600px] w-[600px];
 }
+
 section.update-template-1 .decoration-container .decorationbox1 {
-  @apply top-0 left-3;
+  @apply top-0 left-3 sm:left-0 md:left-[20%] lg:!left-[30%] 2xl:!ml-[5%];
 }
 section.update-template-1 .decoration-container .decorationbox3 {
-  @apply bottom-0 right-3;
+  @apply bottom-0 right-3 sm:right-0 md:right-[20%] lg:!right-[30%] 2xl:!mr-[5%];
 }
 
 section.update-template-1 .decoration-container .decorationbox2 {
-  @apply bg-[#b60606] h-[300px] w-[100%] absolute top-24;
+  @apply bg-[#b60606] h-[300px] w-[100%] absolute top-24 4xl:top-[250px] h-[550px];
 }
 
 section.update-template-1 .text-container {
   @apply bg-[#2e0000e6] border-t-2 border-dashed border-[#fd831f] border-b-2 border-dashed border-[#fd831f] px-[5%] 
-  pt-[10%] pb-[20%] box-border flex flex-col items-center justify-center text-center mt-5;
+  pt-[10%] pb-[20%] box-border flex flex-col items-center justify-center text-center mt-5 sm:pb-[10%] md:pt-[5%] pb-[5%];
 }
 
 section.update-template-1 .text-container .title {
@@ -176,14 +172,14 @@ section.update-template-2 .decorationbox1 {
   @apply bg-primary h-[250px] w-[90%] mx-0 my-auto;
 }
 section.update-template-2 .decorationbox2 {
-  @apply h-[300px] w-[100%] -mt-[50%] mr-auto mb-0 ml-auto  flex items-center justify-center;
+  @apply h-[300px] w-[100%] -mt-[50%] mr-auto mb-0 ml-auto  flex items-center justify-center sm:-mt-[35%] md:-mt-[20%] lg:-mt-[20%] 2xl:-mt-[10%] 3xl:-mt-[5%] h-[600px] w-[600px] 5xl:-mt-[2.5%];
 }
 /* section.update-template-2 .decorationbox2 img {
   max-height: 100%;
   max-width: 100%;
 } */
 section.update-template-2 .text-container {
-  @apply bg-[#2e0000e6] pt-[5%] px-[5%] pb-[25%] box-border text-center;
+  @apply bg-[#2e0000e6] pt-[5%] px-[5%] pb-[25%] box-border text-center sm:pb-[20%] md:pb-[10%] xl:pb-[5%];
 }
 section.update-template-2 .text-container .title {
   @apply font-bold text-[200%] mb-5;
