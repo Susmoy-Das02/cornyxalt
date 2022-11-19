@@ -47,7 +47,7 @@ NAVIGATION BAR
   @apply bg-black w-[100vw] h-[60px] flex items-center justify-start z-[2000] fixed top-0 4xl:h-[200px];
 }
 .navbar .logo {
-  @apply h-[55px] w-[55px] mr-2 flex items-center justify-center 4xl:h-[195px] w-[195px];
+  @apply h-[55px] w-[55px] mr-2 flex items-center justify-center 4xl:h-[195px] 4xl:w-[195px];
 }
 /* .navbar .logo img {
   max-height: 100%;
@@ -67,14 +67,14 @@ header .background-items {
 }
 
 header .background-items .left-column {
-  @apply h-[100%] w-[100%] sm:pt-[60%] box-border;
+  @apply h-[100%] w-[100%] sm:pt-[60%] sm:box-border;
 }
 /* header .background-items .left-column img {
   max-height: 100%;
   max-width: 100%;
 } */
 header .background-items .right-column {
-  @apply bg-[#b60606] sm:pt-[60%] box-border;
+  @apply bg-[#b60606] sm:pt-[60%] sm:box-border;
 }
 header .background-items .headerbg {
   @apply absolute top-0 left-[50%] -translate-x-[-50%] h-[80%] z-10;
@@ -95,7 +95,7 @@ header .text-container .header-contact-buttons a:last-child {
 }
 
 header .text-container .bottom-container {
-  @apply bg-[#2e0000e6] flex flex-col items-center justify-end w-[90%] 4xl:pt-[2.5] pb-[2.5];
+  @apply bg-[#2e0000e6] flex flex-col items-center justify-end w-[90%] 4xl:pt-[2.5] 4xl:pb-[2.5];
 }
 
 header .text-container .categories {
@@ -114,14 +114,14 @@ Section Header Description
 */
 
 section.header-description {
-  @apply border-2 border-dashed border-[#b60606] px-[20%] py-[5%] box-border text-center md:p-[5%] lg:!px-[20%] !py-[5%];
+  @apply border-2 border-dashed border-[#b60606] px-[0%] py-[5%] box-border text-center md:p-[5%] lg:!px-[20%] lg:!py-[5%];
 }
 
 /*
 Section Updates List
 */
 section.update-template-1 {
-  @apply mt-[5%] w-[100vw] relative h-auto;
+  @apply mt-[7%] w-[100vw] relative h-auto;
 }
 
 /* section.update-template-1 img {
@@ -135,7 +135,7 @@ section.update-template-1 .decoration-container {
 
 section.update-template-1 .decoration-container .decorationbox1,
 section.update-template-1 .decoration-container .decorationbox3 {
-  @apply absolute z-10 flex items-center justify-center h-[300px] w-[300px] 4xl:h-[600px] w-[600px];
+  @apply absolute z-10 flex items-center justify-center h-[300px] w-[300px] 4xl:h-[600px] 4xl:w-[600px];
 }
 
 section.update-template-1 .decoration-container .decorationbox1 {
@@ -146,19 +146,19 @@ section.update-template-1 .decoration-container .decorationbox3 {
 }
 
 section.update-template-1 .decoration-container .decorationbox2 {
-  @apply bg-[#b60606] h-[300px] w-[100%] absolute top-24 4xl:top-[250px] h-[550px];
+  @apply bg-[#b60606] h-[300px] w-[100%] absolute top-24 4xl:top-[250px] 4xl:h-[550px];
 }
 
 section.update-template-1 .text-container {
-  @apply bg-[#2e0000e6] border-t-2 border-dashed border-[#fd831f] border-b-2 border-dashed border-[#fd831f] px-[5%] 
-  pt-[10%] pb-[20%] box-border flex flex-col items-center justify-center text-center mt-5 sm:pb-[10%] md:pt-[5%] pb-[5%];
+  @apply bg-[#2e0000e6] border-t-2 border-[#fd831f] border-b-2 border-dashed px-[10%] 
+  py-[20%] box-border flex flex-col items-center justify-center text-center mt-5 sm:pb-[10%] md:pt-[5%] md:pb-[5%];
 }
 
 section.update-template-1 .text-container .title {
-  @apply font-bold text-[200%];
+  @apply font-bold text-[190%];
 }
 section.update-template-1 .text-container .subtitle {
-  @apply font-bold text-[150%] my-5 mx-0;
+  @apply font-bold text-[150%] my-5 mx-0 text-[#F0831F];
 }
 section.update-template-1 .text-container .store-button {
   @apply mt-[20px];
@@ -169,11 +169,14 @@ section.update-template-2 {
 }
 
 section.update-template-2 .decorationbox1 {
-  @apply bg-primary h-[250px] w-[90%] mx-0 my-auto;
+  @apply bg-primary h-[250px] w-[90%] mx-auto my-auto;
 }
 section.update-template-2 .decorationbox2 {
-  @apply h-[300px] w-[100%] -mt-[50%] mr-auto mb-0 ml-auto  flex items-center justify-center sm:-mt-[35%] md:-mt-[20%] lg:-mt-[20%] 2xl:-mt-[10%] 3xl:-mt-[5%] h-[600px] w-[600px] 5xl:-mt-[2.5%];
+  @apply h-[300px] w-[100%] -mt-[50%] mr-auto mb-0 ml-auto flex items-center justify-center sm:-mt-[35%] md:-mt-[20%] lg:-mt-[15%] 2xl:-mt-[10%] 3xl:-mt-[5%] 3xl:h-[600px] 3xl:w-[600px] 5xl:-mt-[2.5%];
 }
+/* section.update-template-2 .decorationbox2 {
+  @apply h-[300px] w-[100%] -mt-[50%] mr-auto mb-0 ml-auto flex items-center justify-center sm:-mt-[35%] md:-mt-[20%] lg:-mt-[20%] 2xl:-mt-[10%] 3xl:-mt-[5%] 3xl:h-[600px] 3xl:w-[600px] 5xl:-mt-[2.5%];
+} */
 /* section.update-template-2 .decorationbox2 img {
   max-height: 100%;
   max-width: 100%;

@@ -37,7 +37,7 @@ module.exports = {
         dark: "#1f2937",
         lighter: "#f3f4f6",
         light: "#e2e4e8",
-        orange: "##fd831f",
+        orange: "#fd831f",
         yam: "#CC5801",
       },
     },
