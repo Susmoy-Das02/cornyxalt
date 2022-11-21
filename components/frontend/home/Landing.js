@@ -10,10 +10,14 @@ import Portraits from "./sections/Portraits";
 import WallMurals from "./sections/WallMurals";
 import Blogs from "./sections/Blogs";
 import LineDesigns from "./sections/LineDesigns";
+import Head from "next/head";
 
 const Landing = () => {
   return (
     <div>
+      <Head>
+        <title>Cornyx Art Studio</title>
+      </Head>
       <Hero />
       <Blogs />
       <CornyxArtStore />

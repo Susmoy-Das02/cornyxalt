@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  FaPhoneVolume,
+  FaEnvelope,
+  FaFacebook,
+  FaInstagram,
+  FaTiktok,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -7,8 +14,8 @@ const Footer = () => {
         <div class="contactcontent">
           <a href="tel:+880 1602 666 956">
             <div class="icondiv">
-              <div class="icon">
-                <i class="fa-solid fa-phone-volume"></i>
+              <div className="flex justify-center name">
+                <FaPhoneVolume />
               </div>
               <div class="name">Number</div>
             </div>
@@ -18,8 +25,8 @@ const Footer = () => {
         <div class="contactcontent">
           <a href="mailto:cornyxart@gmail.com">
             <div class="icondiv">
-              <div class="icon">
-                <i class="fa-solid fa-envelope"></i>
+              <div className="flex justify-center name">
+                <FaEnvelope />
               </div>
               <div class="name">Gmail</div>
             </div>
@@ -29,8 +36,8 @@ const Footer = () => {
         <div class="contactcontent">
           <a href="https://www.instagram.com/cornyx.art/">
             <div class="icondiv">
-              <div class="icon">
-                <i class="fa-brands fa-instagram"></i>
+              <div className="flex justify-center name">
+                <FaInstagram />
               </div>
               <div class="name">Instagram</div>
             </div>
@@ -40,8 +47,8 @@ const Footer = () => {
         <div class="contactcontent ">
           <a href="https://www.facebook.com/cornyx.art">
             <div class="icondiv">
-              <div class="icon">
-                <i class="fa-brands fa-facebook"></i>
+              <div className="flex justify-center name">
+                <FaFacebook />
               </div>
               <div class="name">Facebook</div>
             </div>
@@ -51,8 +58,8 @@ const Footer = () => {
         <div class="contactcontent">
           <a href="https://www.tiktok.com/@cornyx.art">
             <div class="icondiv">
-              <div class="icon">
-                <i class="fa-brands fa-tiktok"></i>
+              <div className="flex justify-center name">
+                <FaTiktok />
               </div>
               <div class="name">Tiktok</div>
             </div>

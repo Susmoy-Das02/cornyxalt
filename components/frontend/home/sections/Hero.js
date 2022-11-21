@@ -1,6 +1,12 @@
 import Image from "next/image";
 import React from "react";
-
+import {
+  FaPhoneVolume,
+  FaEnvelope,
+  FaFacebook,
+  FaInstagram,
+  FaTiktok,
+} from "react-icons/fa";
 const Hero = () => {
   return (
     <header>
@@ -26,27 +32,33 @@ const Hero = () => {
             <li>&#x2022; CUTOMIZATION SERVICES &#x2022;</li>
             <li>&#x2022; ARTSY PRODUCTS &#x2022;</li>
           </ul>
-          <div className="header-contact-buttons">
-            <a href="tel:+880 1602 666 956">
-              <div className="icon">
-                <i className="fa-solid fa-phone-volume"></i>
-              </div>
-              <div className="name">Call Us</div>
-            </a>
-            <a href="mailto:cornyxart@gmail.com">
-              <div className="icon">
-                <i className="fa-solid fa-envelope"></i>
-              </div>
-              <div className="name">Mail Us</div>
-            </a>
-            <a href="https://www.facebook.com/cornyx.art">
-              <div className="icon">
-                <i className="fa-brands fa-instagram"></i>
-                <i className="fa-brands fa-facebook"></i>
-                <i className="fa-brands fa-tiktok"></i>
-              </div>
-              <div className="name">Inbox Us</div>
-            </a>
+          <div className="flex justify-center space-x-3">
+            <div className="header-contact-buttons">
+              <a href="tel:+880 1602 666 956">
+                <div className="flex justify-center text-primary icons">
+                  <FaPhoneVolume />
+                </div>
+                <div className="name">Call Us</div>
+              </a>
+            </div>
+            <div className="header-contact-buttons">
+              <a href="mailto:cornyxart@gmail.com">
+                <div className="flex justify-center text-primary icons">
+                  <FaEnvelope />
+                </div>
+                <div className="name">Mail Us</div>
+              </a>
+            </div>
+            <div className="header-contact-buttons">
+              <a href="https://www.facebook.com/cornyx.art">
+                <div className="flex gap-2  text-primary icons">
+                  <FaInstagram />
+                  <FaFacebook />
+                  <FaTiktok />
+                </div>
+                <div className="name">Inbox Us</div>
+              </a>
+            </div>
           </div>
         </div>
       </div>

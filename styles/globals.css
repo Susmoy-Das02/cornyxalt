@@ -24,11 +24,11 @@ REUSABLES
 
 a:link,
 a:visited {
-  @apply rounded-xl border-2 divide-solid border-[#b60606] no-underline px-5 py-3 box-border text-center block text-white;
+  @apply rounded-xl border-4 divide-solid border-[#b60606] no-underline px-5 py-3 box-border text-center block text-white;
 }
 a:hover,
 a:active {
-  @apply bg-[#b60606] border-2 divide-solid border-[#b60606]  transition delay-75;
+  @apply bg-[#b60606] border-4 divide-solid border-[#b60606]  transition delay-75;
 }
 a:hover i,
 a:active i {
@@ -87,6 +87,10 @@ header .text-container {
 header .text-container .header-contact-buttons {
   @apply w-[90%] flex flex-wrap items-center justify-center pb-5 box-border;
 }
+header .header-contact-buttons:hover .icons,
+header .header-contact-buttons:active .icons {
+  @apply text-white transition delay-75;
+}
 header .text-container .header-contact-buttons a {
   @apply mt-5 mr-2;
 }
@@ -114,7 +118,7 @@ Section Header Description
 */
 
 section.header-description {
-  @apply border-2 border-dashed border-[#b60606] px-[0%] py-[5%] box-border text-center md:p-[5%] lg:!px-[20%] lg:!py-[5%];
+  @apply border-4 border-dashed border-[#b60606] px-[0%] py-[5%] box-border text-center md:p-[5%] lg:!px-[20%] lg:!py-[5%];
 }
 
 /*
@@ -150,12 +154,12 @@ section.update-template-1 .decoration-container .decorationbox2 {
 }
 
 section.update-template-1 .text-container {
-  @apply bg-[#2e0000e6] border-t-2 border-[#fd831f] border-b-2 border-dashed px-[10%] 
+  @apply bg-[#2e0000e6] border-t-4 border-[#fd831f] border-b-4 border-dashed px-[10%] 
   py-[20%] box-border flex flex-col items-center justify-center text-center mt-5 sm:pb-[10%] md:pt-[5%] md:pb-[5%];
 }
 
 section.update-template-1 .text-container .title {
-  @apply font-bold text-[190%];
+  @apply font-bold text-[195%];
 }
 section.update-template-1 .text-container .subtitle {
   @apply font-bold text-[150%] my-5 mx-0 text-[#F0831F];
@@ -185,7 +189,7 @@ section.update-template-2 .text-container {
   @apply bg-[#2e0000e6] pt-[5%] px-[5%] pb-[25%] box-border text-center sm:pb-[20%] md:pb-[10%] xl:pb-[5%];
 }
 section.update-template-2 .text-container .title {
-  @apply font-bold text-[200%] mb-5;
+  @apply font-bold text-[200%] my-5;
 }
 
 /*
@@ -219,7 +223,7 @@ footer .contactcontent:last-child {
 }
 
 footer .footer-description {
-  @apply text-center rounded-lg border-2 border-dashed border-primary p-2 w-full;
+  @apply text-center rounded-lg border-[6px] border-dashed border-primary p-2 w-full;
 }
 
 /*
@@ -227,7 +231,7 @@ Exceptions
 */
 
 .redbottomborder {
-  @apply border-b-2 border-primary border-dashed;
+  @apply border-b-4 border-primary border-dashed;
 }
 
 .orangebottomborder {
