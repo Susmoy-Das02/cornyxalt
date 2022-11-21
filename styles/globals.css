@@ -59,15 +59,21 @@ HEADER
 */
 
 header {
-  @apply mt-14 relative h-[100vh] w-[100vw] overflow-hidden;
+  @apply mt-14 relative h-screen w-screen overflow-hidden;
+}
+.mygrid {
+  grid-template-columns: 47.5% 47.5%;
 }
 
 header .background-items {
-  @apply grid grid-cols-[47.5%]   gap-[5%] p-[5%] h-[100%] w-[100%] box-border absolute top-0 left-0 z-10;
+  @apply grid mygrid gap-[5%] p-[5%] h-[100%] w-[100%] box-border absolute top-0 left-0 z-10;
 }
+/* header .background-items {
+  @apply grid mygrid gap-[5%] p-[5%] h-[100%] w-[100%] box-border absolute top-0 left-0 z-10;
+} */
 
 header .background-items .left-column {
-  @apply h-[100%] w-[100%] sm:pt-[60%] sm:box-border;
+  @apply h-full w-full sm:pt-[60%] sm:box-border;
 }
 /* header .background-items .left-column img {
   max-height: 100%;
@@ -77,15 +83,18 @@ header .background-items .right-column {
   @apply bg-[#b60606] sm:pt-[60%] sm:box-border;
 }
 header .background-items .headerbg {
-  @apply absolute top-0 left-[50%] -translate-x-[-50%] h-[80%] z-10;
+  @apply absolute object-center;
 }
+/* header .background-items .headerbg {
+  @apply absolute top-10 left-[50%] -translate-x-[-50%] h-[80%] z-[15];
+} */
 
 header .text-container {
   @apply h-[100%] w-[100%] absolute z-20 flex flex-col items-center justify-end pb-[5%] box-border;
 }
 
 header .text-container .header-contact-buttons {
-  @apply w-[90%]  pb-5 box-border;
+  @apply w-[90%] flex flex-wrap items-center justify-center pb-5 box-border;
 }
 header .header-contact-buttons:hover .icons,
 header .header-contact-buttons:active .icons {
@@ -94,9 +103,9 @@ header .header-contact-buttons:active .icons {
 header .text-container .header-contact-buttons a {
   @apply mt-5 mr-2;
 }
-/* header .text-container .header-contact-buttons a:last-child {
+header .text-container .header-contact-buttons a:last-child {
   @apply mr-0;
-} */
+}
 
 header .text-container .bottom-container {
   @apply bg-[#2e0000e6] flex flex-col items-center justify-end w-[90%] 4xl:pt-[2.5] 4xl:pb-[2.5];
@@ -223,7 +232,7 @@ footer .contactcontent:last-child {
 }
 
 footer .footer-description {
-  @apply text-center rounded-lg border-[6px] border-dashed border-primary p-2 w-full;
+  @apply text-center rounded-lg border-2 border-dashed border-primary p-2 w-full;
 }
 
 /*

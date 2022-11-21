@@ -12,15 +12,12 @@ const Hero = () => {
     <header>
       <div className="background-items">
         <div className="left-column">
-          <Image alt=" " src="/cornyxcard.png" width="300px" height="300px" />
+          <Image alt=" " src="/cornyxcard.png" width={300} height={300} />
         </div>
         <div className="right-column"></div>
-        <Image
-          alt=" "
-          className="headerbg"
-          src="/website-header.png"
-          layout="fill"
-        />
+        <div className="absolute h-[80%] w-[35%] -translate-x-[-50%] top-0 left-[15%]">
+          <Image className="" alt=" " src="/website-header.png" layout="fill" />
+        </div>
       </div>
       <div className="text-container">
         <div className="motto">
