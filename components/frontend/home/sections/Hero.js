@@ -32,7 +32,7 @@ const Hero = () => {
             <li>&#x2022; CUTOMIZATION SERVICES &#x2022;</li>
             <li>&#x2022; ARTSY PRODUCTS &#x2022;</li>
           </ul>
-          <div className="flex justify-center space-x-3">
+          <div className="flex items-center justify-center gap-5 ">
             <div className="header-contact-buttons">
               <a href="tel:+880 1602 666 956">
                 <div className="flex justify-center text-primary icons">
@@ -43,7 +43,7 @@ const Hero = () => {
             </div>
             <div className="header-contact-buttons">
               <a href="mailto:cornyxart@gmail.com">
-                <div className="flex justify-center text-primary icons">
+                <div className="flex justify-center  text-primary icons">
                   <FaEnvelope />
                 </div>
                 <div className="name">Mail Us</div>

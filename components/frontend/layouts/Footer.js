@@ -10,7 +10,7 @@ import {
 const Footer = () => {
   return (
     <footer className="grid p-10 gap-5">
-      <div className="flex flex-wrap flex-col md:flex-row items-center justify-center space-x-5">
+      <div className="flex flex-wrap flex-col md:flex-row items-center justify-center md:space-x-5">
         <div class="contactcontent">
           <a href="tel:+880 1602 666 956">
             <div class="icondiv">

@@ -85,7 +85,7 @@ header .text-container {
 }
 
 header .text-container .header-contact-buttons {
-  @apply w-[90%] flex flex-wrap items-center justify-center pb-5 box-border;
+  @apply w-[90%]  pb-5 box-border;
 }
 header .header-contact-buttons:hover .icons,
 header .header-contact-buttons:active .icons {
@@ -94,9 +94,9 @@ header .header-contact-buttons:active .icons {
 header .text-container .header-contact-buttons a {
   @apply mt-5 mr-2;
 }
-header .text-container .header-contact-buttons a:last-child {
+/* header .text-container .header-contact-buttons a:last-child {
   @apply mr-0;
-}
+} */
 
 header .text-container .bottom-container {
   @apply bg-[#2e0000e6] flex flex-col items-center justify-end w-[90%] 4xl:pt-[2.5] 4xl:pb-[2.5];
