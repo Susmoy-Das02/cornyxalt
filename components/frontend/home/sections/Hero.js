@@ -15,7 +15,7 @@ const Hero = () => {
           <Image alt=" " src="/cornyxcard.png" width={300} height={300} />
         </div>
         <div className="right-column"></div>
-        <div className="absolute h-[80%] w-[35%] -translate-x-[-50%] top-0 left-[15%]">
+        <div className="midleimg">
           <Image className="" alt=" " src="/website-header.png" layout="fill" />
         </div>
       </div>
@@ -23,39 +23,33 @@ const Hero = () => {
         <div className="motto">
           Flex your personality on everything you own, with Cornyx.
         </div>
-        <div className="bottom-container">
-          <ul className="categories">
+        <div class="bottom-container">
+          <ul class="categories">
             <li>&#x2022; UNIQUE ARTWORKS &#x2022;</li>
             <li>&#x2022; CUTOMIZATION SERVICES &#x2022;</li>
             <li>&#x2022; ARTSY PRODUCTS &#x2022;</li>
           </ul>
-          <div className="flex items-center justify-center gap-5 ">
-            <div className="header-contact-buttons">
-              <a href="tel:+880 1602 666 956">
-                <div className="flex justify-center text-primary icons">
-                  <FaPhoneVolume />
-                </div>
-                <div className="name">Call Us</div>
-              </a>
-            </div>
-            <div className="header-contact-buttons">
-              <a href="mailto:cornyxart@gmail.com">
-                <div className="flex justify-center  text-primary icons">
-                  <FaEnvelope />
-                </div>
-                <div className="name">Mail Us</div>
-              </a>
-            </div>
-            <div className="header-contact-buttons">
-              <a href="https://www.facebook.com/cornyx.art">
-                <div className="flex gap-2  text-primary icons">
-                  <FaInstagram />
-                  <FaFacebook />
-                  <FaTiktok />
-                </div>
-                <div className="name">Inbox Us</div>
-              </a>
-            </div>
+          <div class="header-contact-buttons">
+            <a href="tel:+880 1602 666 956">
+              <div class="icon flex justify-center">
+                <FaPhoneVolume />
+              </div>
+              <div class="name">Call Us</div>
+            </a>
+            <a href="mailto:cornyxart@gmail.com">
+              <div class="icon flex justify-center">
+                <FaEnvelope />
+              </div>
+              <div class="name">Mail Us</div>
+            </a>
+            <a href="https://www.facebook.com/cornyx.art">
+              <div class="icon flex gap-2">
+                <FaInstagram />
+                <FaFacebook />
+                <FaTiktok />
+              </div>
+              <div class="name">Inbox Us</div>
+            </a>
           </div>
         </div>
       </div>

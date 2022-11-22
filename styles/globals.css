@@ -73,7 +73,7 @@ header .background-items {
 } */
 
 header .background-items .left-column {
-  @apply h-full w-full sm:pt-[60%] sm:box-border;
+  @apply h-full w-full pt-[60%] md:pt-0 sm:box-border;
 }
 /* header .background-items .left-column img {
   max-height: 100%;
@@ -84,6 +84,9 @@ header .background-items .right-column {
 }
 header .background-items .headerbg {
   @apply absolute object-center;
+}
+.midleimg {
+  @apply absolute h-[80%] w-[110%] md:h-[78%] md:w-[35%] -translate-x-[-50%]  md:top-0 -left-[60%]  md:left-[15%];
 }
 /* header .background-items .headerbg {
   @apply absolute top-10 left-[50%] -translate-x-[-50%] h-[80%] z-[15];
@@ -119,7 +122,7 @@ header .text-container .categories li {
 }
 
 header .text-container .motto {
-  @apply p-[5%] box-border  font-light italic text-center flex items-center justify-center sm:text-[175%] md:text-[150%] lg:text-[200%];
+  @apply p-[5%] box-border  font-light italic text-center flex items-center justify-center text-[175%] md:text-[150%] lg:text-[200%] leading-normal;
 }
 
 /*
@@ -127,7 +130,7 @@ Section Header Description
 */
 
 section.header-description {
-  @apply border-4 border-dashed border-[#b60606] px-[0%] py-[5%] box-border text-center md:p-[5%] lg:!px-[20%] lg:!py-[5%];
+  @apply border-2 border-dashed border-[#b60606] px-[0%] py-[5%] box-border text-center md:p-[5%] lg:!px-[20%] lg:!py-[5%];
 }
 
 /*
@@ -163,7 +166,7 @@ section.update-template-1 .decoration-container .decorationbox2 {
 }
 
 section.update-template-1 .text-container {
-  @apply bg-[#2e0000e6] border-t-4 border-[#fd831f] border-b-4 border-dashed px-[10%] 
+  @apply bg-[#2e0000e6] border-t-2 border-[#fd831f] border-b-2 border-dashed px-[10%] 
   py-[20%] box-border flex flex-col items-center justify-center text-center mt-5 sm:pb-[10%] md:pt-[5%] md:pb-[5%];
 }
 
